@@ -6,6 +6,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Index from "./pages/Index";
 import About from "./pages/About";
 import Journal from "./pages/Journal";
+import Collections from "./pages/Collections";
 import Rings from "./pages/Rings";
 import Pendants from "./pages/Pendants";
 import AlignmentGuide from "./pages/AlignmentGuide";
@@ -24,6 +25,7 @@ const App = () => (
           <Route path="/" element={<Index />} />
           <Route path="/about" element={<About />} />
           <Route path="/journal" element={<Journal />} />
+          <Route path="/collections" element={<Collections />} />
           <Route path="/rings" element={<Rings />} />
           <Route path="/pendants" element={<Pendants />} />
           <Route path="/alignment-guide" element={<AlignmentGuide />} />

@@ -45,24 +45,39 @@ const About = () => {
         <section className="py-24 lg:py-32">
           <div className="container mx-auto px-6 lg:px-12">
             <div className="max-w-4xl mx-auto">
-              <h2 className="section-heading mb-12 text-center">Our Values</h2>
-              <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-                <div className="text-center">
+              <h2 className="section-heading mb-12 text-center">Our Principles</h2>
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-20 text-center">
+                <div className="p-8 border border-border/50">
+                  <div className="w-2 h-2 rounded-full bg-[hsl(var(--gem-emerald))] mx-auto mb-6" />
                   <h3 className="font-serif text-xl font-medium mb-4">Authenticity</h3>
                   <p className="text-sm text-muted-foreground leading-relaxed">
                     We source only genuine, natural gemstones and provide transparent guidance rooted in traditional practices.
                   </p>
                 </div>
-                <div className="text-center">
+                <div className="p-8 border border-border/50">
+                  <div className="w-2 h-2 rounded-full bg-[hsl(var(--gem-sapphire))] mx-auto mb-6" />
                   <h3 className="font-serif text-xl font-medium mb-4">Craftsmanship</h3>
                   <p className="text-sm text-muted-foreground leading-relaxed">
                     Every piece is meticulously crafted by skilled artisans who understand the significance of gemstone settings.
                   </p>
                 </div>
-                <div className="text-center">
+                <div className="p-8 border border-border/50">
+                  <div className="w-2 h-2 rounded-full bg-[hsl(var(--gem-ruby))] mx-auto mb-6" />
                   <h3 className="font-serif text-xl font-medium mb-4">Guidance</h3>
                   <p className="text-sm text-muted-foreground leading-relaxed">
                     We offer thoughtful, personalised recommendations based on your unique birth chart analysis.
+                  </p>
+                </div>
+              </div>
+
+              <div className="bg-card p-12 lg:p-16 border border-border/50">
+                <div className="max-w-2xl mx-auto text-center">
+                  <h3 className="section-heading text-2xl mb-8">A personal approach to alignment</h3>
+                  <p className="body-text italic mb-8">
+                    "We believe gemstones are more than just ornaments. They are supportive tools for navigating modern life's stressors."
+                  </p>
+                  <p className="text-sm text-muted-foreground leading-relaxed">
+                    Our design philosophy integrates the ancient science of Kundli with contemporary color theory. By understanding the energetic resonance of each hue, we create jewellery that doesn't just complement your style, but supports your well-being.
                   </p>
                 </div>
               </div>

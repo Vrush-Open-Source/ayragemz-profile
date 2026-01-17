@@ -4,11 +4,9 @@ import { Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 const navLinks = [
-  { name: "Rings", href: "/rings" },
-  { name: "Pendants", href: "/pendants" },
-  { name: "Alignment Guide", href: "/alignment-guide" },
-  { name: "Journal", href: "/journal" },
-  { name: "About", href: "/about" },
+  { name: "Collections", href: "/collections" },
+  { name: "Guidance", href: "/alignment-guide" },
+  { name: "Philosophy", href: "/philosophy" },
 ];
 
 const Navbar = () => {

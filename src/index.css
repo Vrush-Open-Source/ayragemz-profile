@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Inter:wght@300;400;500;600&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Inter:wght@300;400;500;600&display=swap");
 
 @tailwind base;
 @tailwind components;
@@ -7,46 +7,51 @@
 @layer base {
   :root {
     /* AYRA Brand Colors - Earthy, Warm, Luxurious */
-    --background: 40 20% 96%;
+    --background: 40 30% 98%; /* Soft Ivory */
     --foreground: 30 10% 20%;
 
-    --card: 40 15% 93%;
+    --card: 40 20% 96%;
     --card-foreground: 30 10% 20%;
 
-    --popover: 40 20% 96%;
+    --popover: 40 30% 98%;
     --popover-foreground: 30 10% 20%;
 
-    --primary: 35 25% 35%;
-    --primary-foreground: 40 20% 96%;
+    --primary: 35 25% 35%; /* Earthy Brown/Stone */
+    --primary-foreground: 40 30% 98%;
 
-    --secondary: 35 15% 88%;
+    --secondary: 40 15% 92%; /* Beige */
     --secondary-foreground: 30 10% 25%;
 
-    --muted: 35 10% 90%;
+    --muted: 40 10% 94%;
     --muted-foreground: 30 8% 45%;
 
-    --accent: 35 30% 82%;
+    --accent: 38 40% 90%; /* Subtle Gold tint */
     --accent-foreground: 30 10% 20%;
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 210 40% 98%;
 
-    --border: 35 15% 85%;
-    --input: 35 15% 85%;
+    --border: 35 15% 88%;
+    --input: 35 15% 88%;
     --ring: 35 25% 35%;
 
-    --radius: 0.25rem;
-
-    /* Custom AYRA Variables */
-    --ayra-gold: 38 50% 55%;
-    --ayra-cream: 40 25% 94%;
+    --ayra-gold: 38 45% 55%;
+    --ayra-cream: 40 30% 96%;
     --ayra-stone: 30 10% 35%;
     --ayra-warm-white: 40 30% 98%;
     --ayra-taupe: 30 15% 65%;
+    --ayra-silver: 210 5% 85%;
+    
+    /* Gemstone Accents */
+    --gem-ruby: 0 72% 51%;
+    --gem-emerald: 160 84% 39%;
+    --gem-sapphire: 220 80% 56%;
+    --gem-yellow: 45 90% 50%;
+    --gem-pearl: 30 20% 90%;
 
     /* Typography */
-    --font-serif: 'Cormorant Garamond', Georgia, serif;
-    --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    --font-serif: "Cormorant Garamond", Georgia, serif;
+    --font-sans: "Inter", -apple-system, BlinkMacSystemFont, sans-serif;
 
     /* Shadows */
     --shadow-soft: 0 4px 20px -4px hsl(30 10% 20% / 0.08);
@@ -122,7 +127,12 @@
     font-family: var(--font-sans);
   }
 
-  h1, h2, h3, h4, h5, h6 {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
     font-family: var(--font-serif);
     @apply font-medium tracking-tight;
   }

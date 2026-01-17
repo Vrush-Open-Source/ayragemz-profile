@@ -1,18 +1,16 @@
 import { Link } from "react-router-dom";
-import ringSapphire from "@/assets/ring-sapphire.jpg";
-import pendantEmerald from "@/assets/pendant-emerald.jpg";
 
 const collections = [
   {
     title: "Rings",
     description: "Traditional gemstone settings for daily wear",
-    image: ringSapphire,
+    image: "/assets/images/generated/premium_ruby_ring_solitaire.png",
     href: "/rings",
   },
   {
     title: "Pendants",
     description: "Elegant stones close to the heart",
-    image: pendantEmerald,
+    image: "/assets/images/generated/premium_pearl_pendant_teardrop.png",
     href: "/pendants",
   },
 ];

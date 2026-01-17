@@ -5,9 +5,11 @@ import { componentTagger } from "lovable-tagger";
 
 // https://vitejs.dev/config/
 export default defineConfig(({ mode }) => ({
+  base: mode === 'production' ? '/ayragemz-profile/' : '/',
   server: {
     host: "::",
     port: 8080,
+    allowedHosts: ["b5d5fa2a2b9c.ngrok-free.app"],
     hmr: {
       overlay: false,
     },

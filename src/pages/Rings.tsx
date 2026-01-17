@@ -1,7 +1,5 @@
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
-import ringSapphire from "@/assets/ring-sapphire.jpg";
-
 const rings = [
   {
     id: 1,
@@ -9,6 +7,7 @@ const rings = [
     stone: "Ruby",
     planet: "Sun",
     description: "A commanding ruby set in warm gold, traditionally worn for leadership and vitality.",
+    image: "/assets/images/generated/premium_ruby_ring_solitaire.png"
   },
   {
     id: 2,
@@ -16,6 +15,7 @@ const rings = [
     stone: "Emerald",
     planet: "Mercury",
     description: "A vibrant emerald for clarity of thought and communication.",
+    image: "/assets/images/generated/premium_emerald_ring_classic.png"
   },
   {
     id: 3,
@@ -23,6 +23,7 @@ const rings = [
     stone: "Blue Sapphire",
     planet: "Saturn",
     description: "A deep blue sapphire for discipline, wisdom, and endurance.",
+    image: "/assets/images/generated/premium_blue_sapphire_ring_statement.png"
   },
   {
     id: 4,
@@ -30,6 +31,7 @@ const rings = [
     stone: "Yellow Sapphire",
     planet: "Jupiter",
     description: "A luminous yellow sapphire for wisdom, prosperity, and spiritual growth.",
+    image: "/assets/images/generated/premium_yellow_sapphire_ring_grace.png"
   },
 ];
 
@@ -56,7 +58,7 @@ const Rings = () => {
                 >
                   <div className="aspect-square overflow-hidden">
                     <img
-                      src={ringSapphire}
+                      src={ring.image}
                       alt={ring.name}
                       className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
                     />

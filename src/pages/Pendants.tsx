@@ -1,7 +1,5 @@
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
-import pendantEmerald from "@/assets/pendant-emerald.jpg";
-
 const pendants = [
   {
     id: 1,
@@ -9,6 +7,7 @@ const pendants = [
     stone: "Pearl",
     planet: "Moon",
     description: "A lustrous pearl pendant for emotional balance and inner peace.",
+    image: "/assets/images/generated/premium_pearl_pendant_teardrop.png"
   },
   {
     id: 2,
@@ -16,6 +15,7 @@ const pendants = [
     stone: "Emerald",
     planet: "Mercury",
     description: "An elegant emerald worn close to the heart for enhanced intuition.",
+    image: "/assets/images/generated/premium_emerald_pendant_drop.png"
   },
   {
     id: 3,
@@ -23,6 +23,7 @@ const pendants = [
     stone: "Ruby",
     planet: "Sun",
     description: "A radiant ruby pendant symbolising courage and passion.",
+    image: "/assets/images/generated/premium_ruby_pendant_heart.png"
   },
   {
     id: 4,
@@ -30,6 +31,7 @@ const pendants = [
     stone: "Yellow Sapphire",
     planet: "Jupiter",
     description: "A golden sapphire pendant for abundance and spiritual wisdom.",
+    image: "/assets/images/generated/premium_yellow_sapphire_pendant_solitaire.png"
   },
 ];
 
@@ -56,7 +58,7 @@ const Pendants = () => {
                 >
                   <div className="aspect-square overflow-hidden">
                     <img
-                      src={pendantEmerald}
+                      src={pendant.image}
                       alt={pendant.name}
                       className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
                     />
