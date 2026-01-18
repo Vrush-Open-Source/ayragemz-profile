@@ -1,16 +1,17 @@
 import { Link } from "react-router-dom";
+import { getAssetPath } from "@/lib/assetPath";
 
 const collections = [
   {
     title: "Rings",
     description: "Traditional gemstone settings for daily wear",
-    image: "/assets/images/generated/premium_ruby_ring_solitaire.png",
+    image: getAssetPath("/assets/images/generated/premium_ruby_ring_solitaire.png"),
     href: "/rings",
   },
   {
     title: "Pendants",
     description: "Elegant stones close to the heart",
-    image: "/assets/images/generated/premium_pearl_pendant_teardrop.png",
+    image: getAssetPath("/assets/images/generated/premium_pearl_pendant_teardrop.png"),
     href: "/pendants",
   },
 ];

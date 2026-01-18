@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import { MoveRight, RefreshCcw, ShieldCheck } from "lucide-react";
+import { getAssetPath } from "@/lib/assetPath";
 
 interface Gemstone {
   name: string;
@@ -89,7 +90,7 @@ const Step5Recommendation = ({ challenge, onReset }: Step5RecommendationProps) =
           
           {(challenge === 'career' || challenge === 'finance') ? (
             <motion.img 
-              src="/assets/images/generated/premium_emerald_ring_1768656197243.png"
+              src={getAssetPath("/assets/images/generated/premium_emerald_ring_1768656197243.png")}
               alt="Premium Emerald Ring"
               className="w-full h-full object-cover relative z-10"
               initial={{ scale: 1.1, opacity: 0 }}

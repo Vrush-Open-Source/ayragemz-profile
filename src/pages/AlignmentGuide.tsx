@@ -1,6 +1,7 @@
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
 import JourneyOrchestrator from "@/components/home/JourneyOrchestrator";
+import { getAssetPath } from "@/lib/assetPath";
 
 const AlignmentGuide = () => {
   return (
@@ -8,7 +9,7 @@ const AlignmentGuide = () => {
       {/* Global Fixed Background Image */}
       <div className="fixed inset-0 pointer-events-none opacity-[0.4] z-0 transition-opacity duration-1000">
         <img 
-          src="/assets/images/generated/rich_gemstone_background_v2_1768657292103.png" 
+          src={getAssetPath("/assets/images/generated/rich_gemstone_background_v2_1768657292103.png")} 
           alt="" 
           className="w-full h-full object-cover scale-125 grayscale-[20%]"
         />
