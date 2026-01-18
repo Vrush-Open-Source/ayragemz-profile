@@ -4,6 +4,7 @@ import { Shield, Sparkles, Compass, MoveRight } from "lucide-react";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
+import { getAssetPath } from "@/lib/assetPath";
 
 const Index = () => {
   const triggers = [
@@ -19,12 +20,12 @@ const Index = () => {
     {
       title: "The Logic of the Kundli",
       desc: "How birth charts act as a map for your personal growth and gemstone alignment.",
-      image: "/assets/images/generated/color_therapy_gemstones_1768656613897.png"
+      image: getAssetPath("/assets/images/generated/color_therapy_gemstones_1768656613897.png")
     },
     {
       title: "Gemstones in Modern Stress",
       desc: "Understanding the calming influence of traditional stones in a high-pressure world.",
-      image: "/assets/images/generated/gemstones_stress_relief_1768656644997.png"
+      image: getAssetPath("/assets/images/generated/gemstones_stress_relief_1768656644997.png")
     }
   ];
 
@@ -33,7 +34,7 @@ const Index = () => {
       {/* Global Fixed Background Image */}
       <div className="fixed inset-0 pointer-events-none opacity-[0.4] z-0 transition-opacity duration-1000">
         <img 
-          src="/assets/images/generated/rich_gemstone_background_v2_1768657292103.png" 
+          src={getAssetPath("/assets/images/generated/rich_gemstone_background_v2_1768657292103.png")} 
           alt="" 
           className="w-full h-full object-cover scale-125 grayscale-[20%]"
         />
